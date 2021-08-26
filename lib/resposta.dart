@@ -1,19 +1,26 @@
 import 'package:flutter/material.dart';
 
-class Questao extends StatelessWidget {
+class Resposta extends StatelessWidget {
   final String texto;
+  final void Function() quandoSelecionado;
 
-  Questao(this.texto);
+  Resposta(this.texto, this.quandoSelecionado);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      margin: EdgeInsets.all(10),
-      child: Text(
-        texto,
-        style: TextStyle(fontSize: 28),
-        textAlign: TextAlign.center,
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          primary: Colors.blue,
+        ),
+        child: Text(
+          texto,
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
+        onPressed: quandoSelecionado,
       ),
     );
   }
