@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # projeto_perguntas
 
-A new Flutter project.
+Projeto finalizado!
 
 ## Getting Started
 
