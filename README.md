@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # projeto_perguntas
 
-Projeto finalizado!
+Projeto finalizado
 
 ## Getting Started
 
